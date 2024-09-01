@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='/style.css' rel='stylesheet' />
+  <title>Bankist</title>
+  <link rel="icon" href="./logo.png" type="image/x-icon">
+
+  
+</head>
+
+<body>
+  <div class='container'>
+    <div class='container-1'>
+    <div class="header">
+      <p>Log in to GetStarted</p>
+      <img src='./logo.png' alt='logo' height='40px' width='40px'>
+      <form>
+        <input id='user' placeholder="User" type="text">
+        <input id="pin" placeholder="Pin" type="number">
+        <button id='btnh'>&#x2192</button>
+      </form>
+    </div>
+    <p id="welcome">welcome</p>
+    </div>
+      <div class='Main' id="main">
+        <div class='main-left'>
+          <div class='movements'>
+          </div>
+          <div class='summary'><p>In<span class="in"></span></p><p >Out<span class="out">200$</span></p> <p>Interest<span class="interest">1.5%</span></p></div>
+        </div>
+        <div class="main-right">
+          <span id="balance"> 0$</span>
+          <div class='transfer'>
+            <p id='main-p'>Transfer</p>
+            <form><input id="transfer" placeholder="to" type='text' /><input id="transferAmount" placeholder="Amount" type='text' /><button class='btn'>&#x2192</button>
+            </form>
+          </div>
+          <div class='Loan'>
+            <p id='main-p'>Get Loan</p>
+            <form><input id="loan" placeholder="Amount" type='number' /> <button class='btnloan'>&#x2192</button></form>
+          </div>
+          <div class='close'>
+            <p id='main-p'>Close Account</p>
+            <form><input id="close" placeholder="User" type='text' /><input id="close-pin" placeholder="Pin" type='password' /> <button class='btnclose'>&#x2192</button></form>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div id="caution-1"><p>User not found</p></div>
+  <div id="caution-2"><p>You have enough Money</p></div>
+  <div id="caution-3"><p>Amount Transfered...</p></div>
+  <div id="caution-4"><p>Loan credited</p></div>
+  <div id="caution-5"><p>Account Closed</p></div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
